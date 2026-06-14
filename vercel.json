@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "sylico.vercel.app" }],
+      "destination": "https://sylico.be/$1",
+      "permanent": true
+    }
+  ]
+}
