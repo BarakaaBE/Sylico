@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.sylico.be" }],
+      "destination": "https://sylico.be/$1",
+      "permanent": true
+    }
+  ]
+}
