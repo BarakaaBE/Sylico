@@ -1167,4 +1167,16 @@ function toggleFaq(btn) {
     const a = b.nextElementSibling;
     if (a) a.style.maxHeight = '0';
     const ic = b.querySelector('.faq-icon');
-    if (ic) { ic.style.transform = 'rotate(0deg)'; ic.text
+        if (ic) { ic.style.transform = 'rotate(0deg)'; ic.textContent = '+'; }
+  });
+  // Ouvrir si fermé
+  if (!isOpen) {
+    btn.setAttribute('aria-expanded', 'true');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+    icon.style.transform = 'rotate(45deg)';
+  }
+}
+
+</script>
+</body>
+</html>
