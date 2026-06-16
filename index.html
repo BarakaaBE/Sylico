@@ -126,6 +126,15 @@
     .team-photo-wrap{border-radius:18px;overflow:hidden;height:480px;position:relative}
     .team-photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center top}
     .logo-img{height:36px;width:auto;object-fit:contain}
+    /* Lightbox */
+    #lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9999;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
+    #lightbox.open{opacity:1;pointer-events:all}
+    #lightbox img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:12px;box-shadow:0 24px 80px rgba(0,0,0,.6);transform:scale(.96);transition:transform .3s}
+    #lightbox.open img{transform:scale(1)}
+    #lightbox-close{position:absolute;top:20px;right:24px;font-size:2rem;color:#fff;cursor:pointer;line-height:1;opacity:.7;transition:opacity .2s;background:none;border:none}
+    #lightbox-close:hover{opacity:1}
+    #lightbox-caption{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);font-family:'Poppins',sans-serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+    .portfolio-item{cursor:zoom-in}
   </style>
 
   <!-- ═══ JSON-LD Structured Data ═══ -->
@@ -499,7 +508,7 @@
     </div>
     <div class="portfolio-grid reveal">
       <!-- 1 tall -->
-      <div class="portfolio-item">
+      <div class="portfolio-item" onclick="openLightbox('images/art-decoratif-sur-mesure-sylico.webp','Art décoratif sur mesure')">
         <img src="images/art-decoratif-sur-mesure-sylico.webp" alt="Art décoratif sur mesure Brabant Wallon — Sylico" loading="lazy" decoding="async" />
         <div class="port-overlay">
           <span class="port-tag">Art décoratif</span>
@@ -508,7 +517,7 @@
         </div>
       </div>
       <!-- 2 -->
-      <div class="portfolio-item">
+      <div class="portfolio-item" onclick="openLightbox('images/peinture-escalier-anthracite-sylico.webp','Escalier contemporain')">
         <img width="375" height="500" loading="lazy" decoding="async" src="images/peinture-escalier-anthracite-sylico.webp" alt="Peinture escalier anthracite — Sylico" />
         <div class="port-overlay">
           <span class="port-tag">Peinture intérieure</span>
@@ -518,7 +527,7 @@
       </div>
       <!-- 3 -->
 <!-- 4 tall -->
-      <div class="portfolio-item">
+      <div class="portfolio-item" onclick="openLightbox('images/renovation-peinture-cuisine-sylico.webp','Cuisine relookée')">
         <img src="images/renovation-peinture-cuisine-sylico.webp" alt="Cuisine relookée — Sylico" loading="lazy">
         <div class="port-overlay">
           <span class="port-tag">Relooking cuisine</span>
@@ -527,7 +536,7 @@
         </div>
       </div>
       <!-- 5 -->
-      <div class="portfolio-item">
+      <div class="portfolio-item" onclick="openLightbox('images/peinture-bandes-colorees-sur-mesure-sylico.webp','Bandes colorées sur mesure')">
         <img src="images/peinture-bandes-colorees-sur-mesure-sylico.webp" alt="Bandes colorées sur mesure — Sylico" loading="lazy">
         <div class="port-overlay">
           <span class="port-tag">Décoration créative</span>
@@ -536,7 +545,7 @@
         </div>
       </div>
       <!-- 6 -->
-      <div class="portfolio-item">
+      <div class="portfolio-item" onclick="openLightbox('images/pose-papier-peint-decoratif-sylico-3.webp','Papier peint décoratif')">
         <img width="375" height="500" loading="lazy" decoding="async" src="images/pose-papier-peint-decoratif-sylico-3.webp" alt="Pose papier peint décoratif Gembloux — Sylico" />
         <div class="port-overlay">
           <span class="port-tag">Revêtement mural</span>
@@ -545,7 +554,7 @@
         </div>
       </div>
       <!-- 7 -->
-      <div class="portfolio-item">
+      <div class="portfolio-item" onclick="openLightbox('images/peinture-chambre-bebe-graphique-sylico.webp','Chambre bébé graphique')">
         <img src="images/peinture-chambre-bebe-graphique-sylico.webp" alt="Chambre bébé graphique Wavre — Sylico" loading="lazy">
         <div class="port-overlay">
           <span class="port-tag">Décoration graphique</span>
@@ -1045,12 +1054,24 @@
       <p class="font-body text-offwhite/30 text-xs text-center">© 2024 Sylico · Peinture &amp; Finitions · Belgique</p>
     </div>
   </div>
+  <div style="border-top:1px solid rgba(245,244,241,.06);margin-top:24px;padding:20px 24px;">
+    <p class="font-body text-center" style="color:rgba(245,244,241,.2);font-size:.7rem;line-height:1.8;">
+      <strong style="color:rgba(245,244,241,.35);">Sylico SRL</strong> · Rue Achille Bauduin 54, 1300 Limal · TVA : BE0795 633 788
+    </p>
+  </div>
 </footer>
 
 <!-- WHATSAPP FAB -->
 <a href="https://wa.me/32498790212" target="_blank" id="whatsapp-btn" aria-label="Nous contacter sur WhatsApp">
   <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.129.558 4.126 1.532 5.859L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.786 9.786 0 01-5.025-1.385l-.36-.214-3.733.979 1-3.642-.235-.374A9.789 9.789 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>
 </a>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie">
+  <button id="lightbox-close" aria-label="Fermer">×</button>
+  <img id="lightbox-img" src="" alt="" />
+  <span id="lightbox-caption"></span>
+</div>
 
 <script>
 // Images data for before/after slider
@@ -1104,8 +1125,19 @@ function setBA(x) {
 baSlider.addEventListener('mousedown', e => { isDragging = true; setBA(e.clientX); });
 window.addEventListener('mousemove', e => { if (isDragging) setBA(e.clientX); });
 window.addEventListener('mouseup', () => isDragging = false);
-baSlider.addEventListener('touchstart', e => { isDragging = true; setBA(e.touches[0].clientX); }, { passive: true });
-window.addEventListener('touchmove', e => { if (isDragging) setBA(e.touches[0].clientX); }, { passive: true });
+let touchStartX = 0, touchStartY = 0;
+baSlider.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  isDragging = true;
+}, { passive: true });
+window.addEventListener('touchmove', e => {
+  if (!isDragging) return;
+  const dx = Math.abs(e.touches[0].clientX - touchStartX);
+  const dy = Math.abs(e.touches[0].clientY - touchStartY);
+  if (dy > dx) { isDragging = false; return; } // scroll vertical → on laisse passer
+  setBA(e.touches[0].clientX);
+}, { passive: true });
 window.addEventListener('touchend', () => isDragging = false);
 
 // BA Tabs
@@ -1155,6 +1187,23 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (t) { e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' }); }
   });
 });
+
+
+// Lightbox
+function openLightbox(src, caption) {
+  const lb = document.getElementById('lightbox');
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox-caption').textContent = caption;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
 // ── FAQ Accordion ──
 function toggleFaq(btn) {
