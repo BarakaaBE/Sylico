@@ -1007,7 +1007,10 @@
             <div><label class="font-body text-xs font-medium text-night/60 block mb-2 uppercase tracking-wider">Nom complet *</label><input type="text" name="nom" placeholder="Jean Dupont" class="form-field" required /></div>
             <div><label class="font-body text-xs font-medium text-night/60 block mb-2 uppercase tracking-wider">Téléphone *</label><input type="tel" name="telephone" placeholder="+32 472 XX XX XX" class="form-field" required /></div>
           </div>
-          <div><label class="font-body text-xs font-medium text-night/60 block mb-2 uppercase tracking-wider">Email</label><input type="email" name="email" placeholder="jean@exemple.be" class="form-field" /></div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label class="font-body text-xs font-medium text-night/60 block mb-2 uppercase tracking-wider">Email</label><input type="email" name="email" placeholder="jean@exemple.be" class="form-field" /></div>
+            <div><label class="font-body text-xs font-medium text-night/60 block mb-2 uppercase tracking-wider">Localité *</label><input type="text" name="localite" placeholder="Wavre, Waterloo, La Hulpe..." class="form-field" required /></div>
+          </div>
           <div><label class="font-body text-xs font-medium text-night/60 block mb-2 uppercase tracking-wider">Type de prestation</label>
             <select name="type" class="form-field" style="appearance:none;">
               <option value="">Sélectionner...</option>
