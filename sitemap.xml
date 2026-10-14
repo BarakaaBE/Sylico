@@ -2,62 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sylico.be/</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-14</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sylico.be/blog.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://sylico.be/peinture-interieure.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sylico.be/blog/choisir-peinture-interieure-guide-brabant-wallon.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://sylico.be/peinture-exterieure-facade.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sylico.be/blog/repeindre-facade-maison-belgique-guide.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sylico.be/blog/preparer-chantier-peinture-conseils-sylico.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://sylico.be/confidentialite.html</loc>
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://sylico.be/pose-papier-peint.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://sylico.be/peintre-wavre.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sylico.be/peintre-louvain-la-neuve.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sylico.be/peintre-waterloo.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://sylico.be/peintre-la-hulpe-rixensart.html</loc>
-    <lastmod>2026-10-08</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/blog.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/blog/papier-peint-ou-peinture-que-choisir.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/blog/combien-de-temps-repeindre-maison.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/blog/toile-de-verre-murs-plafonds.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/blog/relooking-cuisine-peinture.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/blog/choisir-peinture-interieure-guide-brabant-wallon.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/blog/repeindre-facade-maison-belgique-guide.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/blog/preparer-chantier-peinture-conseils-sylico.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sylico.be/confidentialite.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <priority>0.2</priority>
   </url>
 </urlset>
